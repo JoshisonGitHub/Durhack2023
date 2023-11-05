@@ -21,7 +21,7 @@ global.pointvalue = 0
 global.multiplier = 1
 
 
-global.health = 100
+global.health = 10
 
 global.xkillpos = 100
 
