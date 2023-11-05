@@ -707,11 +707,11 @@ else if(global.level == 4){
 }
 else if(global.level == 6){
 	global.notespeed = 5
-	global.reload = 550
+	global.reload = 525
 	layer_hspeed(global.lay_id, -10);
 }
 else if(global.level == 8){
-	global.notespeed = 5
-	global.reload = 625
+	global.notespeed = 5.5
+	global.reload = 550
 	layer_hspeed(global.lay_id, -12);
 }
