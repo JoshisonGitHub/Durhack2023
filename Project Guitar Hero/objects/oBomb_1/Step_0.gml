@@ -12,7 +12,7 @@ if (place_meeting(x, y, global.hitbar) and global.canhit_1) {
 	
 }
 else if (place_meeting(x, y, global.hitbar)) {
-	audio_play_sound(hq_explosion_6288, 10, false)
+	
     instance_destroy(); // This deletes obj_to_delete when it collides with obj_target
 	
 }

@@ -12,7 +12,7 @@ function spawnNotes(){
 	
 		
 	n = irandom(23);
-
+	
 	
 
 	if(n == 1){
@@ -692,9 +692,8 @@ else{
 	
 }
 
-if(global.level < 6) {
-	audio_play_sound(Music1,8,true)
-}
+
+
 if(global.level == 2){
 	global.notespeed = 3
 	global.reload = 250

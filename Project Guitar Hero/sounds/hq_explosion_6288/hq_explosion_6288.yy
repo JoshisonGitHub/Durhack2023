@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "hq_explosion_6288.mp3",
   "type": 0,
-  "volume": 1.0,
+  "volume": 0.3,
 }

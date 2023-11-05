@@ -35,3 +35,11 @@ global.lay_id = layer_get_id("Background");
 global.didhit = false
 
 
+n = irandom(2)
+
+if(n == 1){
+	audio_play_sound(gj2,10,true)
+}
+else{
+	audio_play_sound(New_Begining,10,true)
+}
