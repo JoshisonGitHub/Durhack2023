@@ -11,8 +11,8 @@ function spawnNotes(){
 	
 	
 		
-	//n = irandom(23);
-	n = 1
+	n = irandom(23);
+	
 
 	if(n == 1){
 		notepattern1();
