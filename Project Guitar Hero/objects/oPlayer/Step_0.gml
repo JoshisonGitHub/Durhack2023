@@ -23,7 +23,7 @@ if (canpressbutton) {
     // A gamepad is connected, you can now handle its input
 	//show_debug_message("Your message or variable value here");
 	 
-	if (gamepad_button_check(0, gp_padu)) {
+	if (gamepad_button_check(global.controller, gp_select)) {
 		if(current_section == 4){
 			canpressbutton = false
 			y = 0
@@ -46,7 +46,7 @@ if (canpressbutton) {
 		}
 		
 	}
-	else if (gamepad_button_check(0, gp_padd)) {
+	else if (gamepad_button_check(global.controller, gp_shoulderr)) {
 		if(current_section == 5){
 			canpressbutton = false
 			y = 175
@@ -108,6 +108,25 @@ if(!global.didhit){
 	else{
 		global.didhit = false
 	}
+}
+
+var button = gp_face1;
+for (gamepadIndex = 0; gamepadIndex < gamepad_get_device_count(); gamepadIndex++) {
+    // Check if the current gamepad is connected
+    if (gamepad_is_connected(gamepadIndex)) {
+        if (gamepad_button_check_pressed(gamepadIndex, button)) {
+			// Code to execute when the specified button on the specific gamepad is pressed
+			//show_message("Button pressed on gamepad " + string(gamepadIndex) + "!");
+		}
+    }
+}
+
+for (var i = 0; i < gamepad_get_device_count(); i++) {
+    for (var j = 0; j < gamepad_axis_count(i); j++) {
+        if (abs(gamepad_axis_value(i, j)) > 0.1) {
+            show_debug_message("Gamepad " + string(i) + ", Axis " + string(j) + ": " + string(gamepad_axis_value(i, j)));
+        }
+    }
 }
 
 

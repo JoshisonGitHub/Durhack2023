@@ -43,3 +43,5 @@ if(n == 1){
 else{
 	audio_play_sound(New_Begining,10,true)
 }
+
+global.controller = 4

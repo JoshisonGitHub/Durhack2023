@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-if (place_meeting(x, y, global.hitbar) and gamepad_button_check(0, gp_shoulderl) and global.canhit_5
+if (place_meeting(x, y, global.hitbar) and gamepad_button_check(global.controller, gp_shoulderl) and global.canhit_5
 ) {
     // Code to execute when obj_to_delete collides with obj_target
 	global.pointvalue += 1 * global.multiplier
